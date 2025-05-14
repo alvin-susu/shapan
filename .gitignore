@@ -3,5 +3,5 @@
 *.elf
 *.DS_Store
 *.d
-
+node_modules/
 README.md
