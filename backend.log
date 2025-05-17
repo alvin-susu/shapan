@@ -1,4 +1,24 @@
-Traceback (most recent call last):
-  File "C:\Users\13509\Desktop\arduino\grbl-master\main.py", line 4, in <module>
-    import uvicorn
-ModuleNotFoundError: No module named 'uvicorn'
+INFO:     Started server process [46340]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
+INFO:     ::1:62481 - "OPTIONS /chain/invoke HTTP/1.1" 200 OK
+{'model': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B', 'message': {'role': 'user', 'content': '我今天心情很不错！'}, 'messages': [{'role': 'user', 'content': '我今天心情很不错！'}], 'stream': True}
+{'model': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B', 'message': {'role': 'user', 'content': '我今天心情很不错！'}, 'messages': [{'role': 'user', 'content': '我今天心情很不错！'}], 'stream': True}
+default_deep_seek_chat response is 
+ {'original': '[用户输入]', 'rule_check': '我今天心情很不错！  ', 'emotion': '[不符合]  ', 'img_prompt': '[快乐]  ', 'reply': '听到你这么说真让人感到温暖！🌞 我能感受到你此刻内心的阳光正在自然流淌，这种积极情绪是非常珍贵的自我滋养。\n\n你主动表达愉悦心情的行为本身就很棒，这说明你具备良好的情绪觉察能力。这种正向的心理状态就像心灵的维生素，能增强你的心理免疫力呢。\n\n要不要和我分享一下，是哪些具体的事情或想法为你带来了这份美好感受？我们可以一起探索如何让这样的阳光心态更持久地照亮你的生活~'}
+qwen generate img prompt is[快乐]  ,全图连贯无断笔
+----sync call, please wait a moment----
+response: {"status_code": 200, "request_id": "2a1c710c-8fbd-9011-b54b-03208b365d55", "code": null, "message": "", "output": {"task_id": "afe67dfa-766e-4e16-bf6b-9c335735595e", "task_status": "SUCCEEDED", "results": [{"url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/54/20250514/4615cd53/afe67dfa-766e-4e16-bf6b-9c335735595e-1.png?Expires=1747317681&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=SRJ5n0Z8W72tPoHKBxEC68luZzo%3D", "orig_prompt": "[快乐]  ,全图连贯无断笔", "actual_prompt": "[快乐]  ,全图连贯无断笔"}], "submit_time": "2025-05-14 22:01:06.960", "scheduled_time": "2025-05-14 22:01:07.009", "end_time": "2025-05-14 22:01:22.198", "task_metrics": {"TOTAL": 1, "SUCCEEDED": 1, "FAILED": 0}}, "usage": {"image_count": 1}}
+img_path: c:\Users\13509\Desktop\arduino\grbl-master/imgs\afe67dfa-766e-4e16-bf6b-9c335735595e-1.png
+text img_paths: c:\Users\13509\Desktop\arduino\grbl-master/imgs\afe67dfa-766e-4e16-bf6b-9c335735595e-1.png
+input_image: c:\Users\13509\Desktop\arduino\grbl-master\imgs\afe67dfa-766e-4e16-bf6b-9c335735595e-1.png
+原始尺寸：宽度 1024 像素, 高度 1024 像素
+自动缩放因子：0.2930 mm/像素
+Serial error: could not open port 'COM5': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+JSONResponse is {'content': {'original': '[用户输入]', 'rule_check': '我今天心情很不错！  ', 'emotion': '[不符合]  ', 'img_prompt': '[快乐]  ', 'reply': '听到你这么说真让人感到温暖！🌞 我能感受到你此刻内心的阳光正在自然流淌，这种积极情绪是非常珍贵的自我滋养。\n\n你主动表达愉悦心情的行为本身就很棒，这说明你具备良好的情绪觉察能力。这种正向的心理状态就像心灵的维生素，能增强你的心理免疫力呢。\n\n要不要和我分享一下，是哪些具体的事情或想法为你带来了这份美好感受？我们可以一起探索如何让这样的阳光心态更持久地照亮你的生活~', 'img_url': ['https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/54/20250514/4615cd53/afe67dfa-766e-4e16-bf6b-9c335735595e-1.png?Expires=1747317681&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=SRJ5n0Z8W72tPoHKBxEC68luZzo%3D']}, 'role': 'assistant'}
+INFO:     ::1:62481 - "POST /chain/invoke HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46340]

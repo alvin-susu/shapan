@@ -76,7 +76,8 @@ def img_2_grbl(text: Dict):
     img = cv2.imread(input_image, cv2.IMREAD_GRAYSCALE)
     if img is None:
         raise FileNotFoundError(f"无法读取图片文件: {input_image}")
-    height, width = img.shape
+    img_resized = cv2.resize(img, (canvas_width_mm, canvas_height_mm))
+    height, width = img_resized.shape
     print(f"原始尺寸：宽度 {width} 像素, 高度 {height} 像素")
 
     # 动态计算缩放因子（核心修改）
